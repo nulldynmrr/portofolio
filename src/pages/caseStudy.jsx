@@ -53,7 +53,7 @@ export const Case = () => {
           televisi.
         </p>
       </section>
-      <section className="md:flex text-white px-[40px] md:px[160px] lg:px-[200px] mt-[80px] gap-x-[100px] ">
+      <section className="md:flex text-white px-[10px] md:px[160px] lg:px-[200px] mt-[80px] gap-x-[100px] ">
         <h1 className="md:max-w-[300px] colorTitle text-4xl md:text-6xl font-semibold">
           Problem Statement
         </h1>
@@ -68,7 +68,7 @@ export const Case = () => {
           </li>
         </ol>
       </section>
-      <section className="md:flex text-white px-[40px] md:px[160px] lg:px-[200px] mt-[80px] gap-x-[100px] ">
+      <section className="md:flex text-white px-[10px] md:px[160px] lg:px-[200px] mt-[80px] gap-x-[100px] ">
         <h1 className="md:min-w-[300px] colorTitle text-4xl md:text-6xl font-semibold">
           Solutions
         </h1>
@@ -81,7 +81,7 @@ export const Case = () => {
           <li>Membuat navigasi yang mudah untuk mencari dan memilih film</li>
         </ol>
       </section>
-      <section className="md:flex text-white px-[40px] md:px[160px] lg:px-[200px] mt-[80px] gap-x-[100px] ">
+      <section className="md:flex text-white px-[10px] md:px[160px] lg:px-[200px] mt-[80px] gap-x-[100px] ">
         <h1 className="md:min-w-[300px] colorTitle text-4xl md:text-6xl font-semibold">
           Purpose
         </h1>
@@ -95,7 +95,7 @@ export const Case = () => {
           <li>Untuk memberikan pengalaman menonton film yang nyaman</li>
         </ol>
       </section>
-      <section className="md:flex text-white px-[40px] md:px[160px] lg:px-[200px] mt-[80px] gap-x-[100px] ">
+      <section className="md:flex text-white px-[10px] md:px[160px] lg:px-[200px] mt-[80px] gap-x-[100px] ">
         <h1 className="md:max-w-[300px] colorTitle text-4xl md:text-6xl font-semibold">
           White Paper Research
         </h1>
@@ -117,14 +117,14 @@ export const Case = () => {
         </p>
       </section>
 
-      <section className="md:flex text-white px-[40px] md:px[160px] lg:px-[200px] mt-[80px] gap-x-[100px] ">
+      <section className="md:flex text-white px-[10px] md:px[160px] lg:px-[200px] mt-[80px] gap-x-[100px] ">
         <h1 className="md:max-w-[308px] colorTitle text-4xl md:text-6xl font-semibold">
           Kompetitor Analysis
         </h1>
         <Table />
       </section>
 
-      <section className="md:flex text-white px-[40px] md:px[160px] lg:px-[200px] mt-[80px] gap-x-[100px] ">
+      <section className="md:flex text-white px-[10px] md:px[160px] lg:px-[200px] mt-[80px] gap-x-[100px] ">
         <h1 className="md:min-w-[300px] colorTitle text-4xl md:text-6xl mb-6 font-semibold">
           User Interview
         </h1>
@@ -177,7 +177,7 @@ export const Case = () => {
           </ol>
         </div>
       </section>
-      <section className="md:flex text-white px-[40px] md:px[160px] lg:px-[200px] mt-[80px] gap-x-[100px] ">
+      <section className="md:flex text-white px-[10px] md:px[160px] lg:px-[200px] mt-[80px] gap-x-[100px] ">
         <h1 className="md:min-w-[300px] colorTitle text-4xl md:text-6xl font-semibold">
           User Persona
         </h1>
@@ -225,7 +225,7 @@ export const Case = () => {
           </div>
         </div>
       </section>
-      <section className="md:flex text-white px-[40px] md:px[160px] lg:px-[200px] mt-[80px] gap-x-[100px] ">
+      <section className="md:flex text-white px-[10px] md:px[160px] lg:px-[200px] mt-[80px] gap-x-[100px] ">
         <h1 className="md:min-w-[300px] colorTitle text-4xl md:text-6xl font-semibold">
           User Flow
         </h1>
@@ -239,7 +239,7 @@ export const Case = () => {
           <img src={imgUserFlow} alt="userFlow" className="mt-16" />
         </div>
       </section>
-      <section className="md:flex text-white px-[40px] md:px[160px] lg:px-[200px] mt-[80px] gap-x-[100px] ">
+      <section className="md:flex text-white px-[10px] md:px[160px] lg:px-[200px] mt-[80px] gap-x-[100px] ">
         <h1 className="md:min-w-[300px] colorTitle text-4xl md:text-6xl font-semibold">
           Wireframe
         </h1>
@@ -294,7 +294,7 @@ export const Case = () => {
           </div>
         </div>
       </section>
-      <section className="md:flex text-white px-[40px] md:px[160px] lg:px-[200px] mt-[80px] mb-[80px] gap-x-[100px] ">
+      <section className="md:flex text-white px-[10px] md:px[160px] lg:px-[200px] mt-[80px] mb-[80px] gap-x-[100px] ">
         <h1 className="md:min-w-[300px] colorTitle text-4xl md:text-6xl font-semibold">
           High Fidelity
         </h1>
