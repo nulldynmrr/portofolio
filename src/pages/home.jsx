@@ -30,34 +30,34 @@ export const Home = () => {
       <div id="bg"></div>
       <div id="bg-elemen" className="absolute min-h-[4444px]"></div>
       <div className="top-0 left px-[10px] md:px-[160px] lg:px-[200px]">
-        <section className="flex flex-col items-center justify-center h-screen text-center leading-8 poppins text-white content">
+        <section className="flex flex-col md:items-center justify-center h-screen leading-8 poppins text-white content">
           <h2
-            className="text-4xl md:text-3xl mb-8 font-medium"
+            className="text-2xl md:text-3xl text-left md:text-center mb-2 font-medium"
             data-aos="fade-up"
           >
             Haii! 👋🏻
           </h2>
           <h1
-            className="text-5xl md:text-7xl font-semibold"
+            className="text-3xl text-left md:text-center md:text-7xl font-semibold"
             data-aos="zoom-in-up"
           >
             I'm Dinar Muhammad Akbar
           </h1>
           <h1
-            className="text-5xl md:text-7xl font-semibold"
+            className="text-[20px] text-left md:text-center  md:text-7xl font-medium md:font-semibold"
             data-aos="zoom-in-up"
           >
             UI/UX Designer and
           </h1>
           <h1
-            className="text-5xl md:text-7xl font-semibold"
+            className="text-[20px] text-left md:text-center md:text-7xl font-medium md:font-semibold"
             data-aos="zoom-in-up"
           >
             Junior Front-End Developer.
           </h1>
 
           <p
-            className="mt-20 max-w-[900px] font-light text-[12px] md:text-xl"
+            className="mt-20 max-w-[900px] font-light text-justify md:text-center text-[12px] md:text-xl"
             data-aos="zoom-in-up"
           >
             Menciptakan solusi design yang mengutamakan kenyamanan pengguna
