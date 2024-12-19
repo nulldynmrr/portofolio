@@ -32,10 +32,10 @@ export const Case = () => {
         id="bg-elemen-case"
         className="flex flex-col justify-center items-center relative h-[450px] overflow-hidden px-[40px] md:px[160px] lg:px-[200px] text-white"
       >
-        <h1 className="text-7xl font-weight mb-12">Aplikasi Walkest</h1>
+        <h1 className="text-7xl font-weight mb-12">Aplikasi MovApp</h1>
         <img src={imgHeader} alt="ilustrasi header" />
       </header>
-      <section className="md:flex text-white px-[40px] md:px[160px] lg:px-[200px] mt-[150px] gap-x-[100px] ">
+      <section className="md:flex text-white px-[25px] md:px[160px] lg:px-[200px] mt-[150px] gap-x-[100px] ">
         <h1 className="md:min-w-[300px] colorTitle text-4xl md:text-6xl font-semibold">
           Overview
         </h1>
@@ -176,12 +176,12 @@ export const Case = () => {
           User Persona
         </h1>
         <div>
-          <div className="mt-8 flex gap-x-8">
-            <div className="min-w-[100px] h-[100px] md:min-w-[150px] md:h-[150px]">
+          <div className="mt-8 flex flex-col md:flex-row justify-center items-center gap-x-8">
+            <div className="min-w-[100px] h-[100px] mb-8 md:min-w-[150px] md:h-[150px]">
               <img
                 src={imgProfileUserPersona}
                 alt="foto"
-                className="bg-white w-full h-full mb-8 rounded-full"
+                className="bg-white md:w-full h-full object-contain md:object-cover mb-8 rounded-full"
               />
             </div>
             <div>

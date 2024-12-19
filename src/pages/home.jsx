@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 import "./home.css";
 import "../index.css";
@@ -17,24 +19,41 @@ import {
 } from "../data/data";
 
 export const Home = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
   return (
     <div>
       <div id="bg"></div>
       <div id="bg-elemen" className="absolute min-h-[4444px]"></div>
-      <div className="top-0 left px-[40px] md:px-[160px] lg:px-[200px]">
+      <div className="top-0 left px-[25px] md:px-[160px] lg:px-[200px]">
         <section className="flex flex-col items-center justify-center h-screen text-center leading-8 poppins text-white content">
-          <h2 className="text-xl md:text-3xl mb-8">Haii! 👋🏻</h2>
-          <h1 className="text-3xl md:text-7xl font-semibold">
+          <h2 className="text-2xl md:text-3xl mb-8" data-aos="fade-up">
+            Haii! 👋🏻
+          </h2>
+          <h1
+            className="text-2xl md:text-7xl font-semibold"
+            data-aos="zoom-in-up"
+          >
             I'm Dinar Muhammad Akbar
           </h1>
-          <h1 className="text-4xl md:text-7xl font-semibold">
+          <h1
+            className="text-2xl md:text-7xl font-semibold"
+            data-aos="zoom-in-up"
+          >
             UI/UX Designer and
           </h1>
-          <h1 className="text-3xl md:text-7xl font-semibold">
+          <h1
+            className="text-2xl md:text-7xl font-semibold"
+            data-aos="zoom-in-up"
+          >
             Junior Front-End Developer.
           </h1>
 
-          <p className="mt-20 max-w-[900px]">
+          <p className="mt-20 max-w-[900px]" data-aos="zoom-in-up">
             Menciptakan solusi design yang mengutamakan kenyamanan pengguna
             dengan solusi inovatif untuk memecahkan suatu masalah sehari-hari.
           </p>
@@ -47,7 +66,7 @@ export const Home = () => {
             alt="About Image"
           />
           <div className="lg:w-4/6 space-y-6 w-full px-4">
-            <div className="card">
+            <div className="card w-full">
               <h1 className="text-2xl philosopher-regular pt-4 mb-4">
                 X About Me
               </h1>
@@ -57,7 +76,7 @@ export const Home = () => {
                 </div>
               ))}
             </div>
-            <div className="card">
+            <div className="card w-full">
               <h1 className="text-2xl philosopher-regular pt-4 mb-4">
                 X Skills
               </h1>
@@ -261,7 +280,7 @@ export const Home = () => {
               <p className="mt-2 mb-8 text-xl font-light">MovApp</p>
             </div>
             <p className="cardContentProject flex justify-center items-center w-[250px] overflow-hidden">
-              Created : 20 Agustut 2024
+              Created : 20 Agustus 2024
             </p>
           </div>
 
@@ -277,9 +296,8 @@ export const Home = () => {
                 <h2 className="font-semibold text-lg">Ide</h2>
               </div>
               <p>
-                Aplikasi ini adalah aplikasi untuk menciptakan lingkungan yang
-                baik, untuk membantu orang-orang termotivasi menjadi pejalan
-                kaki.
+                Aplikasi platform untuk menonton film secara langsung dengan
+                menawarkan layanan film Indonesia maupun luar negeri.
               </p>
 
               <div className="flex items-center !mt-[3em] gap-2 cardContentProject !w-[95px]">
@@ -287,8 +305,7 @@ export const Home = () => {
                 <h2 className="font-semibold text-lg">Tujuan</h2>
               </div>
               <p className="mb-8">
-                Meningkatkan orang pejalan kaki sambil mendorong gaya hidup
-                sehat bagi pejalan kaki.
+                Meningkatkan layanan aplikasi film untuk memudahkan pengguna
               </p>
 
               <div className="flex items-center  !mt-[3em] gap-2 cardContentProject !w-[100px]">
@@ -296,8 +313,7 @@ export const Home = () => {
                 <h2 className="font-semibold text-lg">Masalah</h2>
               </div>
               <p className="mb-8">
-                Banyak orang-orang merasa malas untuk menjadi pejalan kaki
-                karena kurang termotivasi.
+                Banyak orang-orang merasa malas untuk pergi jauh ke bioskop.
               </p>
             </div>
 
