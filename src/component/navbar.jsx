@@ -16,6 +16,8 @@ const Navbar = () => {
         { name: "Project", link: "project", isScroll: true },
         { name: "Study Case", link: "studycase", isScroll: true },
       ];
+    } else if (location.pathname === "/movApp") {
+      return [{ name: "Home", link: "/" }];
     }
     return [];
   };
@@ -23,7 +25,7 @@ const Navbar = () => {
   const menu = getMenu();
 
   return (
-    <nav className="fixed flex justify-between items-center top-0 left-0 w-full z-50 py-4 px-[40px] md:px-[160px] lg:px-[200px] bgNavbar text-white">
+    <nav className="fixed flex justify-between items-center top-0 left-0 w-full z-50 py-4 px-[20px] md:px-[160px] lg:px-[200px] bgNavbar text-white">
       <div className="text-lg font-bold mr-12">
         <Link to="/" className="hover:underline">
           dynm

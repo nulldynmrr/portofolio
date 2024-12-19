@@ -29,7 +29,7 @@ export const Home = () => {
     <div>
       <div id="bg"></div>
       <div id="bg-elemen" className="absolute min-h-[4444px]"></div>
-      <div className="top-0 left px-[25px] md:px-[160px] lg:px-[200px]">
+      <div className="top-0 left px-[10px] md:px-[160px] lg:px-[200px]">
         <section className="flex flex-col items-center justify-center h-screen text-center leading-8 poppins text-white content">
           <h2 className="text-2xl md:text-3xl mb-8" data-aos="fade-up">
             Haii! 👋🏻
@@ -53,7 +53,10 @@ export const Home = () => {
             Junior Front-End Developer.
           </h1>
 
-          <p className="mt-20 max-w-[900px]" data-aos="zoom-in-up">
+          <p
+            className="mt-20 max-w-[900px] font-light text-[12px] md:text-xl"
+            data-aos="zoom-in-up"
+          >
             Menciptakan solusi design yang mengutamakan kenyamanan pengguna
             dengan solusi inovatif untuk memecahkan suatu masalah sehari-hari.
           </p>

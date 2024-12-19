@@ -32,10 +32,16 @@ export const Case = () => {
         id="bg-elemen-case"
         className="flex flex-col justify-center items-center relative h-[450px] overflow-hidden px-[40px] md:px[160px] lg:px-[200px] text-white"
       >
-        <h1 className="text-7xl font-weight mb-12">Aplikasi MovApp</h1>
-        <img src={imgHeader} alt="ilustrasi header" />
+        <h1 className="text-7xl font-weight mb-12 text-center">
+          Aplikasi MovApp
+        </h1>
+        <img
+          src={imgHeader}
+          alt="ilustrasi header"
+          className="hidden md:block"
+        />
       </header>
-      <section className="md:flex text-white px-[25px] md:px[160px] lg:px-[200px] mt-[150px] gap-x-[100px] ">
+      <section className="md:flex text-white px-[10px] md:px[160px] lg:px-[200px] mt-[150px] gap-x-[100px] ">
         <h1 className="md:min-w-[300px] colorTitle text-4xl md:text-6xl font-semibold">
           Overview
         </h1>
