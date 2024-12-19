@@ -4,7 +4,7 @@ import "./home.css";
 import Table from "./../component/tableCompotitor";
 
 import imgHeader from "./../asset/bg-Ilustrasi.svg";
-import imgProfileUserPersona from "./../asset/profileUserPersona.svg";
+import imgProfileUserPersona from "./../asset/Gee_Formal.jpg";
 import imgUserFlow from "./../asset/User Flow.svg";
 
 import imgSplashWireframe from "./../asset/Wireframe Splash Screen.svg";
