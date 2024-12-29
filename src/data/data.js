@@ -5,6 +5,9 @@ import { IoLogoJavascript } from "react-icons/io5";
 import imgLungscare from "./../asset/Cover LungsCare.svg";
 import imgAmbis from "./../asset/Cover Ambis.aja.svg";
 import imgKalkulator from "./../asset/Cover Kalkulator.svg";
+import imgHTML from "./../asset/html.jpg";
+import imgJavascript from "./../asset/js.jpg";
+import imgCSS from "./../asset/css.jpg";
 
 export const about = [
   {
@@ -96,5 +99,26 @@ export const projects = [
     image: imgLungscare,
     kategori: ["User Interface", "User Experience", "Team"],
     githubLink: null,
+  },
+];
+
+export const artikel = [
+  {
+    image: imgHTML,
+    title: "HTML",
+    desc: "Menjelaskan mengenai materi HTML.",
+    link: "/artikel/html",
+  },
+  {
+    image: imgCSS,
+    title: "CSS",
+    desc: "Menjelaskan mengenai materi CSS",
+    link: "/artikel/css",
+  },
+  {
+    image: imgJavascript,
+    title: "Javascript",
+    desc: "Menjelaskan mengenai materi JavaScript.",
+    link: "/artikel/javascript",
   },
 ];

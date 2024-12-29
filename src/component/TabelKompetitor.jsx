@@ -6,7 +6,7 @@ import imgVidio from "./../asset/Vidio_logo.svg";
 import imgIflix from "./../asset/iflix.svg";
 import imgMovApp from "./../asset/MovApp.svg";
 
-const TableCompotitor = () => {
+const TabelKompetitor = () => {
   return (
     <div className="mt-10">
       <div className="card w-full grid grid-cols-8 gap-4 font-light text-[16px] md:text-[20px]">
@@ -184,4 +184,4 @@ const TableCompotitor = () => {
   );
 };
 
-export default TableCompotitor;
+export default TabelKompetitor;

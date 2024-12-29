@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./home.css";
-import Table from "./../component/tableCompotitor";
+import Table from "./../component/TabelKompetitor";
 
 import imgHeader from "./../asset/bg-Ilustrasi.svg";
 import imgProfileUserPersona from "./../asset/Gee_Formal.jpg";
