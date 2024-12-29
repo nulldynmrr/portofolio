@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./home.css";
+import imgHasil from "./../asset/hasilJs.png";
 
 export const Javascript = () => {
   return (
-    <div id="bg-case" className="w-full pb-12 h-[9999px]">
+    <div id="bg-case" className="w-full pb-12">
       <header
         id="bg-elemen-case"
         className="flex flex-col justify-center items-center relative h-[300px] overflow-hidden px-[40px] md:px[160px] lg:px-[200px] text-white"
@@ -23,7 +24,7 @@ export const Javascript = () => {
             harus mengguanakn Bahasa javascript agar biar interaktif. Yuk, kita
             pelajari dan bahas lebih lanjut!
           </p>
-          <h3 className="text-2xl font-bold mt-8">Sejarah Javascript.</h3>
+          <h3 className="text-2xl font-bold my-8">Sejarah Javascript.</h3>
           <p className="text-[18px] text-justify">
             Brendan Eich mulai menciptakan sebuah Bahasa pemograman ialah
             JavaScript bersama dengan Netscape yang di bawah naungan Mocha. Nama
@@ -35,7 +36,7 @@ export const Javascript = () => {
             memungkinkan proses aktif dilakukan dalam satu halaman web.
           </p>
 
-          <h3 className="text-2xl font-bold mt-8">
+          <h3 className="text-2xl font-bold my-8">
             JavaScript Menjadi Bahasa FullStack
           </h3>
           <p className="text-[18px] text-justify">
@@ -47,7 +48,7 @@ export const Javascript = () => {
             aplikasi di frontend dan backend.
           </p>
 
-          <h3 className="text-2xl font-bold mt-8">
+          <h3 className="text-2xl font-bold my-8">
             Memulai Belajar JavaScript
           </h3>
           <p className="text-[18px] text-justify">
@@ -60,14 +61,24 @@ export const Javascript = () => {
             Studio Code, Sublime Text, Atom, WebStorm, atau bahkan Notepad++.
           </p>
 
-          <h3 className="text-2xl font-bold mt-8">Hello World</h3>
+          <h3 className="text-2xl font-bold my-8">Hello World</h3>
           <p className="text-[18px] text-justify">
             Ada dua cara untuk membuat kode JavaScript. Kita dapat membuatnya
             langsung di file HTML atau menggunakan ekstensi JavaScript.js dan
             kemudian mengimpornya ke dalam file HTML. Pada saat ini, kita akan
             menggunakan HTML langsung untuk membuat kode programnya lebih mudah.
           </p>
-          <pre className="bg-[#0B1120] p-4 rounded-lg mt-2 border-gray-300">
+
+          <h4 className="text-xl font-bold my-8">
+            1. Hello World di file yang sama
+          </h4>
+
+          <p className="text-[18px] text-justify">
+            Dalam satu file html, kita dapat membuat kode javascript dengan
+            menggunakan satu file html dan javascript. Misalnya,
+            file.writeln("hello world") akan menampilkan teks hello world.
+          </p>
+          <pre className="bg-[#0B1120] p-4 rounded-lg border-gray-300 my-4">
             <code>
               &lt;html&gt;
               <br />
@@ -80,16 +91,11 @@ export const Javascript = () => {
               &lt;/html&gt;
             </code>
           </pre>
-          <p className="text-[18px] text-justify">
-            Dalam satu file html, kita dapat membuat kode javascript dengan
-            menggunakan satu file html dan javascript. Misalnya,
-            file.writeln("hello world") akan menampilkan teks hello world.
-          </p>
 
-          <h4 className="text-xl font-bold mt-4">
+          <h4 className="text-xl font-bold my-8">
             2. Hello World di file yang berbeda
           </h4>
-          <pre className="bg-[#0B1120] p-4 rounded-lg mt-2 border-gray-300">
+          <pre className="bg-[#0B1120] p-4 rounded-lg mt-2 border-gray-300 my-">
             <code>
               &lt;script src="scripts/hello-world.js"&gt;&lt;/script&gt;
             </code>
@@ -97,11 +103,10 @@ export const Javascript = () => {
           <p className="text-[18px] text-justify">
             Hasil yang bisa kita dilihat di browser akan menghasilkan seperti
             gambar dibawah:
-            <br />
-            <em>&lt;Gambar Hello World&gt;</em>
           </p>
+          <img src={imgHasil} className="w-full" alt="Hasil javascript" />
 
-          <h3 className="text-2xl font-bold mt-8">Komentar</h3>
+          <h3 className="text-2xl font-bold my-8">Komentar</h3>
           <p className="text-[18px] text-justify">
             Komentar adalah baris kode yang tidak dijalankan oleh browser.
             Komentar digunakan untuk menambahkan catatan, deskripsi, dan
@@ -111,15 +116,15 @@ export const Javascript = () => {
             lebih dari satu baris dapat menggunakan <code>/*(komentar)*/</code>.
           </p>
 
-          <h3 className="text-2xl font-bold mt-8">Titik Koma</h3>
+          <h3 className="text-2xl font-bold my-8">Titik Koma</h3>
           <p className="text-[18px] text-justify">
             Javascript ini adalah Bahasa pemograman yang bisa menambahkan titik
             koma di akhir kode, ini sama hal nya dengan Bahasa pemograman C/C++.
             Namun javascript sendiri boleh menggunakan titik koma (;) atau tidak
-            tidak masalah.
+            menggunakan titik koma bisa .
           </p>
 
-          <h3 className="text-2xl font-bold mt-8">Tipe data</h3>
+          <h3 className="text-2xl font-bold my-8">Tipe data</h3>
           <ul className="list-disc pl-8 space-y-2">
             <li className="text-[18px] text-justify">
               <strong>Number</strong>
@@ -176,7 +181,7 @@ export const Javascript = () => {
             </li>
           </ul>
 
-          <h3 className="text-2xl font-bold mt-8">Variabel</h3>
+          <h3 className="text-2xl font-bold my-8">Variabel</h3>
           <p className="text-[18px] text-justify">
             Data disimpan di variable. Dengan menyimpan data di dalamnya, kita
             dapat menggunakannya lagi dengan menyebutkan nama variablenya. Untuk
@@ -189,7 +194,7 @@ export const Javascript = () => {
             dengan tanda = lalu diikuti dengan nilai atau nilainya. Jika kita
             mengubah data, tidak sulit untuk mengubah semuanya.
           </p>
-          <pre className="bg-[#0B1120] p-4 rounded-lg mt-2 border-gray-300">
+          <pre className="bg-[#0B1120] p-4 rounded-lg my-8 border-gray-300">
             <code>
               var nama = "Akbar";
               <br />
@@ -212,7 +217,7 @@ export const Javascript = () => {
             ini juga disebut sebagai konstanta.
           </p>
 
-          <h3 className="text-2xl font-bold mt-8">Aritmatika</h3>
+          <h3 className="text-2xl font-bold my-8">Aritmatika</h3>
           <p className="text-[18px] text-justify">
             Operator aritmatika, juga disebut sebagai operator yang juga
             digunakan untuk melakukan perhitungan, adalah operator yang sering

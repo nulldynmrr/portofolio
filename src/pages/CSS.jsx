@@ -1,13 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./home.css";
+import imgHtml from "./../asset/exampleHtml.png";
+import imgCss from "./../asset/exampleCss.png";
+import imgHasil from "./../asset/exampleResult.png";
+import imgStrukturCSS from "./../asset/struktur-css.png";
+import imgUniversal from "./../asset/universal.png";
+import imgKelas from "./../asset/kelas.png";
+import imgTag from "./../asset/tag.png";
 
 export const CSS = () => {
   return (
-    <div id="bg-case" className="w-full pb-12 h-[9999px]">
+    <div id="bg-case" className="w-full pb-12">
       <header
         id="bg-elemen-case"
-        className="flex flex-col justify-center items-center relative h-[300px] overflow-hidden px-[40px] md:px[160px] lg:px-[200px] text-white"
+        className="flex flex-col justify-center items-center relative h-[450px] overflow-hidden px-[40px] md:px[160px] lg:px-[200px] text-white"
       >
         <h1 className="text-7xl font-weight mb-12 text-center pt-[120px]">
           CSS
@@ -41,16 +48,17 @@ export const CSS = () => {
             HTML yang terkait.
           </p>
 
+          <h4 className="text-xl font-bold mt-8">Index.html</h4>
+          <img src={imgHtml} className="w-full" alt="Contoh HTML" />
+
+          <h4 className="text-xl font-bold mt-8">Style.css</h4>
+          <img src={imgCss} className="w-full" alt="Contoh CSS" />
+
           <h4 className="text-xl font-bold mt-8">
-            Contoh Struktur HTML dan CSS
+            Jika kita membuka file HTML di browser, kita akan menemukan output
+            berikut ini:
           </h4>
-          <pre className="bg-[#0B1120] p-4 rounded-lg mt-2 border-gray-300">
-            <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code>
-          </pre>
-          <p className="text-[18px] text-justify">
-            Pada file HTML, kita menggunakan tag <code>&lt;link&gt;</code> untuk
-            menghubungkan file CSS ke dalam dokumen HTML.
-          </p>
+          <img src={imgHasil} className="w-full" alt="Hasil" />
 
           <h3 className="text-2xl font-bold mt-8">
             Sintaks untuk Menerapkan Gaya CSS
@@ -61,64 +69,54 @@ export const CSS = () => {
             CSS harus berisi yang berikut ini:
             <ul className="list-disc pl-8 space-y-2">
               <li>
-                <strong>Pemilih:</strong> Elemen yang akan dimodifikasi.
+                <strong>Selector</strong> Elemen yang akan dimodifikasi.
               </li>
               <li>
-                <strong>Properti:</strong> Karakteristik yang akan dimodifikasi.
+                <strong>Property</strong> Karakteristik yang akan dimodifikasi.
               </li>
               <li>
-                <strong>Nilai:</strong> Nilai yang diterapkan pada properti.
+                <strong>Value</strong> Nilai yang diterapkan pada properti.
               </li>
             </ul>
           </p>
+          <img src={imgStrukturCSS} className="mt-8" alt="Struktur CSS" />
 
           <h3 className="text-2xl font-bold mt-8">Jenis-Jenis Penyeleksi</h3>
           <p className="text-[18px] text-justify">
             Dalam CSS ada beberapa cara untuk memilih elemen HTML, yang dapat
             diklasifikasikan ke dalam 4 kelompok berikut ini:
           </p>
-          <ul className="list-disc pl-8 space-y-2">
+          <ul className="list-disc pl-8 space-y-2 text-[18px] ">
             <li>
-              <strong>Pemilih Universal:</strong> Selektor ini memilih semua
-              elemen dokumen.
+              <strong>Pemilih Universal</strong>
+              <p>
+                Selektor ini memilih semua elemen dokumen. Selektor ini biasanya
+                digunakan untuk melakukan pemformatan umum dan standarisasi CSS
+                di browser.
+              </p>
+              <img src={imgUniversal} alt="style Universal" />
             </li>
             <li>
-              <strong>Pemilih Tag:</strong> Memilih semua elemen pada halaman
-              yang tag HTML-nya sesuai dengan nilai pemilih.
+              <strong>Pemilih Tag</strong>
+              <p>
+                Memilih semua elemen pada halaman yang tag HTML-nya sesuai
+                dengan nilai pemilih. Selektor ini biasanya digunakan untuk
+                membuat modifikasi struktural pada dokumen, seperti jenis huruf
+                dan ukuran teks.
+              </p>
+              <img src={imgTag} alt="style tag" />
             </li>
             <li>
-              <strong>Pemilih Kelas:</strong> Memilih elemen berdasarkan kelas
-              yang ditetapkan.
-            </li>
-            <li>
-              <strong>Pemilih ID:</strong> Memilih elemen berdasarkan ID yang
-              ditetapkan.
+              <strong>Pemilih Kelas</strong>
+              <p>
+                Memilih sekumpulan elemen halaman yang kelas atributnya sesuai
+                dengan nama yang diberikan. Jenis pemilih ini dimulai dengan .
+                diikuti dengan nama kelas. Jenis pemilih ini biasanya digunakan
+                untuk menata sekelompok elemen.
+              </p>
+              <img src={imgKelas} alt="style kelas" />
             </li>
           </ul>
-
-          <h3 className="text-2xl font-bold mt-8">Contoh Penggunaan CSS</h3>
-          <pre className="bg-[#0B1120] p-4 rounded-lg mt-2 border-gray-300">
-            <code>
-              body &lt;br /&gt;
-              {"{ "}
-              <br />
-              &nbsp;&nbsp;&nbsp;&nbsp;background-color: lightblue;
-              <br />
-              {"}"}
-            </code>
-          </pre>
-          <p className="text-[18px] text-justify">
-            Di atas adalah contoh penggunaan CSS untuk memberikan warna latar
-            belakang biru muda pada halaman.
-          </p>
-
-          <h3 className="text-2xl font-bold mt-8">Penutupan CSS</h3>
-          <p className="text-[18px] text-justify">
-            CSS adalah bahasa yang sangat penting dalam desain web karena
-            memungkinkan kita untuk memisahkan konten dan presentasi. Dengan
-            pemahaman CSS yang baik, kita dapat menciptakan desain web yang
-            responsif dan menarik.
-          </p>
         </article>
       </section>
       <button className="fixed bottom-6 right-6 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full shadow-lg transition duration-300">
