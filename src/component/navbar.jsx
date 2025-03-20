@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useLocation, Link } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
@@ -6,7 +6,21 @@ import "../index.css";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const getMenu = () => {
     if (location.pathname === "/") {
@@ -26,7 +40,13 @@ const Navbar = () => {
   const menu = getMenu();
 
   return (
-    <nav className="fixed flex justify-between items-center top-0 left-0 w-full z-50 py-4 px-[20px] md:px-[160px] lg:px-[200px] bgNavbar text-white">
+    <nav
+      className={`fixed flex justify-between items-center top-0 left-0 w-full z-50 py-4 px-[20px] md:px-[160px] lg:px-[200px] transition-all duration-300 ${
+        isScrolled
+          ? "bgNavbar text-white shadow-md"
+          : "bg-transparent text-white"
+      }`}
+    >
       <div className="text-lg font-bold mr-12">
         <Link to="/" className="hover:underline">
           dynm
@@ -58,7 +78,7 @@ const Navbar = () => {
                   to={item.link}
                   smooth={true}
                   duration={500}
-                  offset={item.link === "home" ? -20 : -70}
+                  offset={-70}
                   className="cursor-pointer hover:transition duration-300"
                 >
                   {item.name}

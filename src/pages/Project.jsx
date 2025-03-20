@@ -5,7 +5,7 @@ import { Allprojects } from "./../data/data";
 
 export const Project = () => {
   return (
-    <div id="bg-case" className="w-full pb-12 min-h-[850px]">
+    <div id="bg-case" className="w-full pb-12 ">
       <header
         id="bg-elemen-case"
         className="flex flex-col justify-center items-center relative h-[300px] overflow-hidden px-6 md:px-16 lg:px-24 text-white"
