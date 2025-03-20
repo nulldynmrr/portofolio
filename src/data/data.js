@@ -2,8 +2,8 @@ import { RxFigmaLogo } from "react-icons/rx";
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt, FaMapMarkerAlt, FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
-import imgLungscare from "./../asset/Cover LungsCare.svg";
-import imgAmbis from "./../asset/Cover Ambis.aja.svg";
+import imgMoveApp from "./../asset/Cover MoveApp.svg";
+import imgChambooth from "./../asset/Cover Chambooth.svg";
 import imgKalkulator from "./../asset/Cover Kalkulator.svg";
 import imgHTML from "./../asset/html.jpg";
 import imgJavascript from "./../asset/js.jpg";
@@ -83,22 +83,22 @@ export const projects = [
     desc: "Kalkulator sederhana yang dirancang dengan Javascript. Proyek ini belajar mengenai pada operasi aritmatika dasar dan desain UI/UX nya",
     image: imgKalkulator,
     kategori: ["UI/UX", "Web Development", "Solo", "HTML", "CSS", "Javascript"],
-    githubLink: "https://github.com/nulldynmrr/project-javascript-kalkulator",
+    link: "https://github.com/nulldynmrr/project-javascript-kalkulator",
   },
   {
-    title: "Learn design for create a website",
-    desc: "Merancang website edukasi yang ramah pengguna. Dengan mempelajari seperti konsistensi visual, dan memiliki prinsip user-freindly",
-    image: imgAmbis,
-    kategori: ["UI", "Website", "Solo"],
-    githubLink: null,
+    title: "Chambooth",
+    desc: "Merancang sebuah website untuk menyimpan cerita",
+    image: imgChambooth,
+    kategori: ["UI", "Website", "HTML", "CSS", "Javascript", "Solo"],
+    link: "http://photoboothdnr.vercel.app",
   },
 
   {
-    title: "Build a LungsCare App",
-    desc: "Merancang aplikasi untuk pencegah penyakit paru-paru. Tujuan membuat aplikasi ini adalah sebagai Tugas Akhir Motion Laboratory (Motion Hack).",
-    image: imgLungscare,
-    kategori: ["User Interface", "User Experience", "Team"],
-    githubLink: null,
+    title: "Move App",
+    desc: "Design Aplikasi untuk menonton film favorit",
+    image: imgMoveApp,
+    kategori: ["User Interface", "User Experience", "Solo"],
+    link: "/movApp",
   },
 ];
 

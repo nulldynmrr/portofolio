@@ -11,6 +11,7 @@ const Navbar = () => {
   const getMenu = () => {
     if (location.pathname === "/") {
       return [
+        { name: "Artikel", link: "/artikel" },
         { name: "Experience", link: "experience", isScroll: true },
         { name: "Expertise", link: "expertise", isScroll: true },
         { name: "Project", link: "project", isScroll: true },

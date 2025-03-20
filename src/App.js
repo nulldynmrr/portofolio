@@ -3,10 +3,10 @@ import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Navbar from "./component/navbar";
 import { Home } from "./pages/home";
 import { Case } from "./pages/caseStudy";
-import Artikel from "./pages/Artikel";
-import HTML from "./pages/HTML";
-import Javascript from "./pages/Javascript";
-import CSS from "./pages/CSS";
+import Artikel from "./pages/artikel/Artikel";
+import HTML from "./pages/artikel/HTML";
+import Javascript from "./pages/artikel/Javascript";
+import CSS from "./pages/artikel/CSS";
 
 export function App() {
   return (

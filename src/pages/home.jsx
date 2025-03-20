@@ -6,8 +6,8 @@ import "./home.css";
 import "../index.css";
 import imgAbout from "./../asset/about.svg";
 import imgExpertise from "./../asset/ilustrasiExpertise.svg";
-import imgMockup from "./../asset/mockup.svg";
-import { MdOutlineArrowOutward } from "react-icons/md";
+// import imgMockup from "./../asset/mockup.svg";
+// import { MdOutlineArrowOutward } from "react-icons/md";
 import {
   FaLightbulb,
   FaExclamationTriangle,
@@ -15,7 +15,7 @@ import {
   FaInstagram,
   FaLinkedin,
 } from "react-icons/fa";
-import { LuGoal } from "react-icons/lu";
+// import { LuGoal } from "react-icons/lu";
 import {
   organizationExperience,
   commiteExperience,
@@ -34,7 +34,7 @@ export const Home = () => {
   return (
     <div>
       <div id="bg"></div>
-      <div id="bg-elemen" className="absolute min-h-[4444px]"></div>
+      <div id="bg-elemen" className="absolute"></div>
       <div className="top-0 left px-[10px] md:px-[160px] lg:px-[200px]">
         <section className="flex flex-col md:items-center justify-center h-screen leading-8 poppins text-white content">
           <h2
@@ -261,9 +261,9 @@ export const Home = () => {
               key={index}
               className="flex flex-col lg:flex-row text-left mb-12"
             >
-              {item.githubLink ? (
+              {item.link ? (
                 <a
-                  href={item.githubLink}
+                  href={item.link}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex flex-col lg:flex-row text-left mb-12"
@@ -327,7 +327,7 @@ export const Home = () => {
           ))}
         </section>
 
-        <section id="studycase" className="text-white">
+        {/* <section id="studycase" className="text-white">
           <div className="lg:flex justify-between ">
             <div>
               <h1 className="text-4xl font-semibold">UI/UX Project</h1>
@@ -385,7 +385,7 @@ export const Home = () => {
               Study Case <MdOutlineArrowOutward className="ml-2 font-bold" />
             </Link>
           </button>
-        </section>
+        </section> */}
         <footer class="bg-gray-800 mt-12 text-white py-2 w-full rounded-tl-2xl rounded-tr-2xl">
           <div class="text-center px-4">
             <p>&copy; 2024 Dinar Muhammad Akbar. </p>
