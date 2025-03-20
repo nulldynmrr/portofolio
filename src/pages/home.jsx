@@ -257,10 +257,7 @@ export const Home = () => {
           </p>
 
           {projects.map((item, index) => (
-            <div
-              key={index}
-              className="flex flex-col lg:flex-row text-left mb-12"
-            >
+            <div key={index} className="flex flex-col lg:flex-row text-left">
               {item.link ? (
                 <a
                   href={item.link}
@@ -325,6 +322,9 @@ export const Home = () => {
               )}
             </div>
           ))}
+          <a href="/project" className="text-xl">
+            View All Project
+          </a>
         </section>
 
         {/* <section id="studycase" className="text-white">

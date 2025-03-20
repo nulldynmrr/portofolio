@@ -15,7 +15,7 @@ const Navbar = () => {
         { name: "Experience", link: "experience", isScroll: true },
         { name: "Expertise", link: "expertise", isScroll: true },
         { name: "Project", link: "project", isScroll: true },
-        { name: "Study Case", link: "studycase", isScroll: true },
+        { name: "Study Case", link: "/movApp" },
       ];
     } else if (location.pathname === "/movApp") {
       return [{ name: "Home", link: "/" }];

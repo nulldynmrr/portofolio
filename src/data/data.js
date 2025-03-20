@@ -5,6 +5,9 @@ import { IoLogoJavascript } from "react-icons/io5";
 import imgMoveApp from "./../asset/Cover MoveApp.svg";
 import imgChambooth from "./../asset/Cover Chambooth.svg";
 import imgKalkulator from "./../asset/Cover Kalkulator.svg";
+import imgLungscare from "./../asset/Cover LungsCare.svg";
+import imgKasbonPay from "./../asset/Cover Kasbon Pay.svg";
+import imgQuiz from "./../asset/Cover Small Quiz.svg";
 import imgHTML from "./../asset/html.jpg";
 import imgJavascript from "./../asset/js.jpg";
 import imgCSS from "./../asset/css.jpg";
@@ -79,12 +82,29 @@ export const commiteExperience = [
 
 export const projects = [
   {
+    title: "Chambooth",
+    desc: "Merancang sebuah website untuk menyimpan cerita",
+    image: imgChambooth,
+    kategori: ["UI", "Website", "HTML", "CSS", "Javascript", "Solo"],
+    link: "http://photoboothdnr.vercel.app",
+  },
+  {
     title: "Kalkulator",
     desc: "Kalkulator sederhana yang dirancang dengan Javascript. Proyek ini belajar mengenai pada operasi aritmatika dasar dan desain UI/UX nya",
     image: imgKalkulator,
-    kategori: ["UI/UX", "Web Development", "Solo", "HTML", "CSS", "Javascript"],
+    kategori: ["UI/UX", "Web Development", "HTML", "CSS", "Javascript", "Solo"],
     link: "https://github.com/nulldynmrr/project-javascript-kalkulator",
   },
+  {
+    title: "Move App",
+    desc: "Design Aplikasi untuk menonton film favorit",
+    image: imgMoveApp,
+    kategori: ["User Interface", "User Experience", "Solo"],
+    link: "/movApp",
+  },
+];
+
+export const Allprojects = [
   {
     title: "Chambooth",
     desc: "Merancang sebuah website untuk menyimpan cerita",
@@ -94,11 +114,37 @@ export const projects = [
   },
 
   {
+    title: "Kalkulator",
+    desc: "Kalkulator sederhana yang dirancang dengan Javascript. Proyek ini belajar mengenai pada operasi aritmatika dasar dan desain UI/UX nya",
+    image: imgKalkulator,
+    kategori: ["UI/UX", "Web Development", "Solo", "HTML", "CSS", "Javascript"],
+    link: "https://github.com/nulldynmrr/project-javascript-kalkulator",
+  },
+  {
+    title: "Lungscare",
+    desc: "Merancang Aplikasi pencegahan merokok untuk salah satu tugas Motion Hack",
+    image: imgLungscare,
+    kategori: ["User Interface", "User Experience", "Tim"],
+  },
+  {
+    title: "Kasbon Pay",
+    desc: "Belajar Merancang aplikasi e-wallet",
+    image: imgKasbonPay,
+    kategori: ["User Interface", "User Experience", "Solo"],
+  },
+  {
     title: "Move App",
     desc: "Design Aplikasi untuk menonton film favorit",
     image: imgMoveApp,
     kategori: ["User Interface", "User Experience", "Solo"],
     link: "/movApp",
+  },
+
+  {
+    title: "Quizz",
+    desc: "Merancang quiz sederhana",
+    image: imgQuiz,
+    kategori: ["UI/UX", "React js", "Solo"],
   },
 ];
 

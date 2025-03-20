@@ -7,6 +7,7 @@ import Artikel from "./pages/artikel/Artikel";
 import HTML from "./pages/artikel/HTML";
 import Javascript from "./pages/artikel/Javascript";
 import CSS from "./pages/artikel/CSS";
+import Project from "./pages/Project";
 
 export function App() {
   return (
@@ -20,6 +21,7 @@ export function App() {
           <Route path="/artikel/html" element={<HTML />} />
           <Route path="/artikel/javascript" element={<Javascript />} />
           <Route path="/artikel/css" element={<CSS />} />
+          <Route path="/project" element={<Project />} />
         </Routes>
       </div>
     </Router>
