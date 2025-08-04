@@ -36,6 +36,16 @@ export const skills = [
 
 export const organizationExperience = [
   {
+    title: "HIMPUNAN INFORMATIKA",
+    role: "STAFF AHLI HIMA IF ",
+    date: "Apr 2025-sekarang",
+  },
+  {
+    title: "HIJI NEVMOCK",
+    role: "Front-end Developer",
+    date: "Jan 2025-sekarang",
+  },
+  {
     title: "helPhin",
     role: "UI/UX Designer",
     date: "Okt 2024-sekarang",
@@ -50,16 +60,16 @@ export const organizationExperience = [
     role: "Anggota Divisi UI/UX",
     date: "Des 2023-Apr 2024",
   },
-  {
-    title: "Ambalan Adipati Singacala",
-    role: "Kerani (Sekretaris)",
-    date: "Jan 2022-Des 2022",
-  },
-  {
-    title: "OSIS SMAN 1 Kawali",
-    role: "Koordinator Sekbid 9 IPTEK",
-    date: "Nov 2021-Nov 2022",
-  },
+  // {
+  //   title: "Ambalan Adipati Singacala",
+  //   role: "Kerani (Sekretaris)",
+  //   date: "Jan 2022-Des 2022",
+  // },
+  // {
+  //   title: "OSIS SMAN 1 Kawali",
+  //   role: "Koordinator Sekbid 9 IPTEK",
+  //   date: "Nov 2021-Nov 2022",
+  // },
 ];
 
 export const commiteExperience = [

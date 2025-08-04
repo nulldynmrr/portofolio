@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 import "./home.css";
 import "../index.css";
-import imgAbout from "./../asset/about.svg";
+import imgAbout from "./../asset/about.png";
 import imgExpertise from "./../asset/ilustrasiExpertise.svg";
 // import imgMockup from "./../asset/mockup.svg";
 // import { MdOutlineArrowOutward } from "react-icons/md";
