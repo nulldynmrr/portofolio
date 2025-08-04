@@ -37,7 +37,7 @@ export const skills = [
 export const organizationExperience = [
   {
     title: "HIMPUNAN INFORMATIKA",
-    role: "STAFF AHLI HIMA IF ",
+    role: "Staff Ahli Software Engineering and Algorithm",
     date: "Apr 2025-sekarang",
   },
   {
